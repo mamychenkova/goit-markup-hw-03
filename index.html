@@ -12,11 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
   <body>
     <header class="header-site">
+      <div class="container">
       <nav>
         <a href="index.html" class="logo-web"> <span>Web</span></a>
         <a href="index.html" class="logo-studio">
@@ -42,20 +44,19 @@
           >
         </li>
       </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
-      <div class="hero">
+      <div class="container">
         <section class="hero-section">
-          <h1 class="hero-heading">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="hero-button">
-            <img src="./images/button.svg" alt="кнопка" width="200" />
-            <span class="hero-button-text">Заказать услугу</span>
-          </a>
+          <h1 class="hero-haeding">эффективные решения для вашего бизнеса</h1>
+          <a href="" class="button">Заказать услугу</a>
         </section>
       </div>
       <section class="advantages-section">
-        <h2 class="advantages-heading">Наши преимущества</h2>
+       <div class="container" >
+          <h2 class="advantages-heading">Наши преимущества</h2>
         <ul class="advantages list">
           <li>
             <a href=""
@@ -104,8 +105,10 @@
             </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
       <section class="work-examples">
+        <div class="container" >
         <h2>Чем мы занимаемся</h2>
         <ul class="">
           <li>
@@ -143,8 +146,10 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
       <section class="team-section">
+        <div class="container">
         <h2 class="team-heading">Наша команда</h2>
         <ul class="team-list">
           <li>
@@ -349,8 +354,10 @@
             </ul>
           </li>
         </ul>
+        <div>
       </section>
       <section>
+        <div class="container">
         <h2>Постоянные клиенты</h2>
         <ul class="klient">
           <li>
@@ -388,10 +395,12 @@
             /></a>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <div>
+    <footer class="footer" >
+      <div class="container">
+        <div>
         <a href="index.html" class="logo-web"> <span>Web</span></a>
         <a href="index.html" class="logo-studio">
           <span>Studio</span>
@@ -432,8 +441,9 @@
       <div>
         <b>ПОДПИСАТЬСЯ НА РАССЫЛКУ</b>
         <address>E-mail</address>
-        <a class="link-sub" href="">Подписаться</a>
+        <a class="button" href="">Подписаться</a>
        <p class="end">2020 | Developed by GoIT Students</p>
+      </div>
       </div>
     </footer>
   </body>
