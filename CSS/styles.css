@@ -29,7 +29,7 @@ ul {
   list-style: none;
 }
 
-.logo-web > span {
+.logo-web {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -39,6 +39,7 @@ ul {
 
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-right: 0;
 }
 
 .logo-studio {
@@ -51,7 +52,14 @@ ul {
 
   letter-spacing: 0.03em;
   color: #000000;
+  margin-left: 0px;
+  margin-right: auto;
 }
+.header-site .container {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav a {
   font-family: Roboto;
   font-style: normal;
@@ -62,8 +70,17 @@ ul {
 
   color: #212121;
 }
+.nav,
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav li {
+  margin-left: 60px;
+}
 .site-nav :hover,
-:focus {
+.site-nav:focus {
   color: #2196f3;
 }
 .adress-nav a {
@@ -72,23 +89,37 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-left: 150px;
+  margin-right: 0px;
 }
+.adress-nav :hover,
+.adress-nav:focus {
+  color: #2196f3;
+}
+.adress-nav {
+  display: flex;
+}
+
 .container {
   width: 1230px;
   outline: 2px solid red;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
-  margin-bottom: 25px;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-haeding {
   color: #ffffff;
-  background-color: tomato;
+  background-color: grey;
   margin-top: 0px;
   margin-bottom: 50px;
 }
-
+.hero-section {
+  text-align: center;
+  padding: 200px, 477px;
+}
 .button {
   display: inline-block;
   background-color: #2196f3;
@@ -101,10 +132,20 @@ ul {
   font-size: 16px;
   line-height: 30px;
 }
+
 .advantages-heading {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: transparent;
+  display: none;
+}
+.advantages {
+  display: flex;
+  width: ((100% - 90px) / 4);
+  margin: 0px;
+  padding: 0px;
+  margin-top: 70px;
+  margin-bottom: 84px;
+  align-items: center;
 }
 
 .advantages img {
@@ -125,6 +166,8 @@ ul {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .advantages p {
   font-style: normal;
@@ -132,17 +175,30 @@ ul {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
+  margin-right: 30px;
+
+  margin-bottom: 0px;
 
   letter-spacing: 0.03em;
 
   color: #757575;
+}
+
+.work-examples {
+  display: flex;
+  /* calc((100% - 60px) / 3) */
+  margin-top: 0px;
 }
 h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
+
 .examples-text {
   font-style: normal;
   font-weight: bold;
@@ -168,6 +224,10 @@ h2 {
 
   letter-spacing: 0.03em;
 }
+.team-list {
+  display: flex;
+  text-align: center;
+}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -184,21 +244,27 @@ h2 {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.sociallink-list a {
+.sociallink-list {
   color: #333333;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
 }
 .sociallink-list a:hover,
 .sociallink-list a:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
-.klient a {
+.klient {
   color: #333333;
+  display: flex;
+  width: 175px;
+  height: 90px;
 }
-.klient a:hover,
-.klient a:focus {
+.klient :hover,
+.klient :focus {
   color: #2196f3;
-  background-color: #ffffff;
 }
 .footer {
   background: #2f303a;
