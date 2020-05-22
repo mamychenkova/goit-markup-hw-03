@@ -38,9 +38,9 @@ ul {
   font-size: 26px;
   line-height: 31px;
   /* identical to box height */
-
   letter-spacing: 0.03em;
   color: #2196f3;
+
   margin-right: 0;
 }
 
@@ -51,9 +51,9 @@ ul {
   font-size: 26px;
   line-height: 31px;
   /* identical to box height */
-
   letter-spacing: 0.03em;
   color: #000000;
+
   margin-left: 0px;
   margin-right: auto;
 }
@@ -69,7 +69,6 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #212121;
 }
 .nav,
@@ -78,8 +77,11 @@ ul {
   align-items: center;
 }
 
-.site-nav li {
+.site-nav-link {
   margin-left: 60px;
+  margin-top: 34px;
+  padding-bottom: 34px;
+  border-bottom: 2px solid#2196f3;
 }
 .site-nav :hover,
 .site-nav:focus {
@@ -91,6 +93,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+
   margin-left: 150px;
   margin-right: 0px;
 }
@@ -120,7 +123,10 @@ ul {
 }
 .hero-section {
   text-align: center;
-  padding: 200px, 477px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 450px;
+  padding-right: 450px;
 }
 .button {
   display: inline-block;
@@ -312,6 +318,22 @@ h2 {
   background: #2f303a;
   color: #ffffff;
 }
+.footer .container {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.sociallink-end {
+  display: flex;
+}
+.adress-container {
+  margin-right: 180px;
+}
+.sociallink-container {
+  margin-right: 100px;
+}
+
 .footer .logo-studio {
   font-family: Raleway;
   font-style: normal;
@@ -343,11 +365,17 @@ h2 {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.contacts {
+  display: inline-block;
+}
 .sociallink-end {
   color: rgba(255, 255, 255, 0.1);
+  margin-top: 16px;
 }
-
-.sociallink-end :hover {
+.sociallink-end-element {
+  margin-right: 10px;
+}
+.sociallink-end:hover {
   color: #2196f3;
 }
 .end {
@@ -359,7 +387,25 @@ h2 {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.4);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
 }
+.email {
+  width: 270px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 16px;
+}
+.footer .button {
+  margin-top: 34px;
+}
+
 /* портфолио */
 .button-list a {
   font-weight: 500;
