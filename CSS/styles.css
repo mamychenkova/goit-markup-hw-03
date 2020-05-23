@@ -70,6 +70,7 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  
 }
 .nav,
 .site-nav {
@@ -79,14 +80,15 @@ ul {
 
 .site-nav-link {
   margin-left: 60px;
-  margin-top: 34px;
-  padding-bottom: 34px;
-  border-bottom: 2px solid#2196f3;
+  margin-top: 32px;
+  padding-bottom: 32px;
+ 
 }
 .site-nav :hover,
 .site-nav:focus {
   color: #2196f3;
 }
+.current { border-bottom: 2px solid#2196f3;}
 
 .adress-nav {
   display: flex;
@@ -441,14 +443,43 @@ h2 {
 }
 .tehnokrak {
   display: flex;
+
+  flex-wrap: wrap;
 }
+.tehnokrak-element {
+  margin-right: 30px;
+
+  width: calc((100% - 60px) / 3);
+}
+.tehnokrak-element:nth-child(3n) {
+  margin-right: 0;
+  
+}
+ .tehnokrak-element:hover .tehnokrak-text{ display: block;
+  /* background: url(portfolio1.jpg); */
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 5px 5px 0px 0px;
+  width: 380px;
+  height: 294px;
+  padding: 63px 24px;}
 .tehnokrak h1 {
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  color: #212121;
+  color: #212121;}
+.proekt-name
+   {margin-top: 20px;
+  margin-bottom: 0;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .tehnokrak-produkt {
   font-weight: normal;
@@ -457,19 +488,46 @@ h2 {
   /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: #757575;
+
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
-.tehnokrak .img :hover {
+
+.tehnokrak-text {
+  display: block;
+  background: url(portfolio1.jpg);
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: url(portfolio1.jpg);
   background-color: #2196f3;
   border-radius: 5px 5px 0px 0px;
   width: 380px;
   height: 294px;
+  padding: 63px 24px;
 }
+.tehnokrak-text {
+  display: none;
+}
+
+}
+/* .tehnokrak-image :hover .tehnokrak-text {
+  display: block;
+  background: url(portfolio1.jpg);
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  /* letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 5px 5px 0px 0px;
+  width: 380px;
+  height: 294px;
+/* } */ 
+
 .link-sub {
   color: #ffffff;
 }
