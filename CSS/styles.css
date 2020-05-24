@@ -119,17 +119,30 @@ ul {
 }
 
 .hero-haeding {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+/* or 136% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
   color: #ffffff;
   background-color: grey;
   margin-top: 0px;
   margin-bottom: 50px;
 }
 .hero-section {
+
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 450px;
-  padding-right: 450px;
+  padding-left: 277px;
+  padding-right: 277px;
 }
 .button {
   display: inline-block;
@@ -143,8 +156,7 @@ ul {
   font-size: 16px;
   line-height: 30px;
 }
-.advantages-section {margin-top: 94px;
-  margin-bottom: 94px;}
+
 .advantages-heading {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -153,12 +165,17 @@ ul {
 .advantages {
   display: flex;
    margin: 0px;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-bottom: 94px;
+  
+ 
   align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+ 
  
 }
+.advantages-section {padding-top: 94px;
+  
+ }
 .advantages-element { 
   width: calc((100% - 90px) / 4);
    margin-right: 30px;}
@@ -214,8 +231,8 @@ ul {
   width: calc((100% - 60px) / 3);
 }
 .work-examples {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 0px;
+  padding-bottom: 94px;
   padding-top: 94px;
 }
 h2 {
@@ -246,7 +263,7 @@ h2 {
 }
 .team-section {
   background-color: #f5f4fa;
-  margin-bottom: 94px;
+  
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -263,8 +280,12 @@ h2 {
 }
 .team-list-person {
   margin-right: 30px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
-
+.team-list-person:last-child 
+{margin-right: 0px;}
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -272,6 +293,9 @@ h2 {
   /* identical to box height */
 
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
 }
 .profession {
   font-weight: normal;
@@ -280,14 +304,18 @@ h2 {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #757575;
+  
+   margin-bottom: 16px;
 }
 .sociallink-list {
   color: #333333;
   display: flex;
   align-items: center;
-  padding: 0px;
-  justify-content: center;
+  padding-bottom: 24px;
+  justify-content: space-evenly;
 }
+/* .sociallink-element {
+  } */
 .sociallink-list a:hover,
 .sociallink-list a:focus {
   color: #ffffff;
@@ -319,7 +347,8 @@ h2 {
   margin-right: 0px;
 }
 .client-section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .footer {
   background: #2f303a;
