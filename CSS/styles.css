@@ -70,7 +70,6 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-  
 }
 .nav,
 .site-nav {
@@ -82,13 +81,14 @@ ul {
   margin-left: 60px;
   margin-top: 32px;
   padding-bottom: 32px;
- 
 }
 .site-nav :hover,
 .site-nav:focus {
   color: #2196f3;
 }
-.current { border-bottom: 2px solid#2196f3;}
+.current {
+  border-bottom: 2px solid#2196f3;
+}
 
 .adress-nav {
   display: flex;
@@ -109,7 +109,7 @@ ul {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid red;
   margin-right: auto;
   margin-left: auto;
@@ -143,7 +143,8 @@ ul {
   font-size: 16px;
   line-height: 30px;
 }
-
+.advantages-section {margin-top: 94px;
+  margin-bottom: 94px;}
 .advantages-heading {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -151,17 +152,19 @@ ul {
 }
 .advantages {
   display: flex;
-  /* width: calc((100% - 90px) / 4); */
-  margin: 0px;
+   margin: 0px;
   padding: 0px;
-  margin-top: 70px;
-  margin-bottom: 84px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   align-items: center;
+ 
 }
-
+.advantages-element { 
+  width: calc((100% - 90px) / 4);
+   margin-right: 30px;}
 .advantages img {
   background-color: #f5f4fa;
-  width: 278px;
+  width: 270px;
   height: 120px;
   color: #212121;
   padding: 0px;
@@ -213,6 +216,7 @@ ul {
 .work-examples {
   margin-top: 94px;
   margin-bottom: 94px;
+  padding-top: 94px;
 }
 h2 {
   font-weight: bold;
@@ -234,7 +238,7 @@ h2 {
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
-  width: 380px;
+  width: 370px;
   height: 70px;
   margin: 0px;
 
@@ -331,7 +335,7 @@ h2 {
   display: flex;
 }
 .adress-container {
-  margin-right: 180px;
+  margin-right: 140px;
 }
 .sociallink-container {
   margin-right: 100px;
@@ -359,160 +363,168 @@ h2 {
 
   letter-spacing: 0.03em;
 }
-.footer .email br {
+
+.contacts {
+  display: inline-block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.contacts {
-  display: inline-block;
-}
-.sociallink-end {
-  color: rgba(255, 255, 255, 0.1);
-  margin-top: 16px;
-}
-.sociallink-end-element {
-  margin-right: 10px;
-}
-.sociallink-end:hover {
-  color: #2196f3;
-}
-.end {
-  font-size: 12px;
-  line-height: 24px;
-  /* or 200% */
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.4);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0px;
-}
-.email {
-  width: 270px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 16px;
-}
-.footer .button {
-  margin-top: 34px;
-}
-
-/* портфолио */
-.button-list a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-  letter-spacing: 0.03em;
-  color: #212121;
-  background: #f5f4fa;
-
-  height: 38px;
-  padding: 6px 22px;
-  margin-right: 8px;
-}
-.button-list {
-  display: flex;
-  margin-top: 94px;
-  padding-bottom: 16 px;
-  margin-bottom: 34px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button-list :hover,
-.button-list :focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
   color: #ffffff;
-  background: #2196f3;
 }
-.tehnokrak {
-  display: flex;
-
-  flex-wrap: wrap;
-}
-.tehnokrak-element {
-  margin-right: 30px;
-
-  width: calc((100% - 60px) / 3);
-}
-.tehnokrak-element:nth-child(3n) {
-  margin-right: 0;
-  
-}
- .tehnokrak-element:hover .tehnokrak-text{ display: block;
-  /* background: url(portfolio1.jpg); */
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border-radius: 5px 5px 0px 0px;
-  width: 380px;
-  height: 294px;
-  padding: 63px 24px;}
-.tehnokrak h1 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
-  letter-spacing: 0.06em;
-  color: #212121;}
-.proekt-name
-   {margin-top: 20px;
-  margin-bottom: 0;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-.tehnokrak-produkt {
+  .contacts br{
+  font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 187% */
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
   letter-spacing: 0.03em;
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);}
+  .sociallink-end {
+    color: rgba(255, 255, 255, 0.1);
+    margin-top: 16px;
+  }
+  .sociallink-end-element {
+    margin-right: 10px;
+  }
+  .sociallink-end:hover {
+    color: #2196f3;
+  }
+  .end {
+    font-size: 12px;
+    line-height: 24px;
+    /* or 200% */
 
-  margin-bottom: 20px;
-  margin-top: 0px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
+    text-align: center;
+    letter-spacing: 0.03em;
 
-.tehnokrak-text {
-  display: block;
-  background: url(portfolio1.jpg);
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: #2196f3;
-  border-radius: 5px 5px 0px 0px;
-  width: 380px;
-  height: 294px;
-  padding: 63px 24px;
-}
-.tehnokrak-text {
-  display: none;
-}
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+  }
+  .email {
+    width: 270px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 16px;
+  }
+  .footer .button {
+    margin-top: 34px;
+  }
 
+  /* портфолио */
+  .button-list a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #f5f4fa;
+
+    height: 38px;
+    padding: 6px 22px;
+    margin-right: 8px;
+  }
+  .button-list {
+    display: flex;
+    margin-top: 94px;
+    padding-bottom: 16 px;
+    margin-bottom: 34px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button-list :hover,
+  .button-list :focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    background: #2196f3;
+  }
+  .tehnokrak {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .tehnokrak-element {
+    margin-right: 30px;
+
+    width: calc((100% - 60px) / 3);
+  }
+  .tehnokrak-element:nth-child(3n) {
+    margin-right: 0;
+  }
+  .tehnokrak-element:hover .tehnokrak-text {
+    display: block;
+    /* background: url(portfolio1.jpg); */
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: #2196f3;
+    border-radius: 5px 5px 0px 0px;
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+  }
+  .tehnokrak h1 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: #212121;
+  }
+  .proekt-name {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .tehnokrak-produkt {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .tehnokrak-text {
+    display: block;
+    background: url(portfolio1.jpg);
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: #2196f3;
+    border-radius: 5px 5px 0px 0px;
+    width: 370px;
+    height: 294px;
+    padding: 63px 24px;
+  }
+  .tehnokrak-text {
+    display: none;
+  }
 }
 /* .tehnokrak-image :hover .tehnokrak-text {
   display: block;
@@ -520,13 +532,13 @@ h2 {
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
-  /* letter-spacing: 0.03em;
+/* letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2196f3;
   border-radius: 5px 5px 0px 0px;
   width: 380px;
   height: 294px;
-/* } */ 
+/* } */
 
 .link-sub {
   color: #ffffff;
